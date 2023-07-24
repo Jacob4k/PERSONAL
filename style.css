@@ -409,3 +409,50 @@ body {
 .sample a:hover::before {
     width: 100%;
 }
+
+.gdrive {
+    position: absolute;
+    padding: 5px 5%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.gdrive a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: 2px solid #ffff;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffff;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.gdrive a:hover {
+    color: #081b29;
+}
+
+.gdrive a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.gdrive a:hover::before {
+    width: 100%;
+}
